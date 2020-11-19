@@ -1,0 +1,56 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    width:400px;
+    font-size:200%;
+}
+/* Line1 */
+.line1{
+    background-color:black;
+    color:rgb(97, 70, 70);
+}
+/* /Line1 */
+/*Line2*/
+.line2{
+    display:flex;
+}
+.line2 p:first-child{
+    flex-basis:200px;
+}
+.line2 p:not(:first-child){
+    flex-basis:100px;
+}
+/* /Line2 */
+
+/* /Line345 */
+.line345{
+   display:flex;
+   flex-flow:row wrap; 
+}
+.line345 p{
+    flex-basis:25%;  
+}
+/* Line345 */
+
+/*Line6*/
+.line6{
+   display:flex; 
+}
+.line6{
+    display:flex;
+}
+.line6 p:first-child{
+    flex-basis:75%;
+}
+.line6 p:nth-child(2){
+    flex-basis:25%;
+}
+/*/Line6*/
+body *:not(.line1):not(.bg-o){
+    border:1px solid black;
+    background-color:gray;
+}
+
